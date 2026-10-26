@@ -145,21 +145,20 @@ Bright future Tutoring Centre does not currently have an official website. Inste
 
 <h1>ChangeLog</h1>
 <h2>| Page | Change | Date |</h2>
-|---|---|---|
-| Homepage | Subject tabs ("What We Teach") | 18 October 2026 |
-| Homepage | FAQ accordion | 18 October 2026|
-| Homepage | Donate button and pop-up form | 18 October 2026 |
-| Homepage | Quick Links cards (sitemap) | 18 October 2026 |
-| About us | "Read More" button that reveals extra text | 24 October 2026 |
-| About us | Scroll progress bar |24 October 2026 |
-| About us | Side navigation (About Us / What Drives Us / Our Team) | 24 October 2026 |
-| About us | Vision, Mission and History cards with tilt effect | 25 October 2026 |
-| About us | Animated pass-rate counter | 25 October 2026 |
-| Contact us | Enquiry form | 25 October 2026 |
-| Contact us | Chat widget | 26 October 2026 |
-| Contact us | Two Google Maps with expand buttons | 26 October 2026 |
-| Subjects Offered | "Book" buttons that send the subject to the Contact page | 26 October 2026 |
-| Textbooks | Shopping cart (add, total, checkout) | 26 October 2026 |
+<li> Homepage | Subject tabs ("What We Teach") | 18 October 2026 |</li>|
+<li> Homepage | FAQ accordion | 18 October 2026|</li>|
+<li> Homepage | Donate button and pop-up form | 18 October 2026 |</li>|
+<li>Homepage | Quick Links cards (sitemap) | 18 October 2026 |</li>| 
+<li>About us | "Read More" button that reveals extra text | 24 October 2026 |</li>| 
+<li> About us | Scroll progress bar |24 October 2026 |</li>|
+<li> About us | Side navigation (About Us / What Drives Us / Our Team) | 24 October 2026 |</li>|
+<li>About us | Vision, Mission and History cards with tilt effect | 25 October 2026 |</li>| 
+<li>About us | Animated pass-rate counter | 25 October 2026 |</li>| 
+<li>Contact us | Enquiry form | 25 October 2026 |</li>| 
+<li> Contact us | Chat widget | 26 October 2026 |</li>|
+<li>Contact us | Two Google Maps with expand buttons | 26 October 2026 |</li>| 
+<li> Subjects Offered | "Book" buttons that send the subject to the Contact page | 26 October 2026 |</li>|
+<li>Textbooks | Shopping cart (add, total, checkout) | 26 October 2026 |</li>| 
 
 
  Bright Future Tutoring Centre – Changelog
