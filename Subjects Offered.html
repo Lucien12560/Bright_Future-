@@ -1,114 +1,135 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Subjects Offered</title>
-        <link rel="stylesheet" href="../CSS/style.css"> 
-    </head>
+<head>
+    <title>Subjects Offered</title>
+    <link rel="stylesheet" href="../CSS/style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../JS/JavaScript.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="subjects-page">
+
+    <!-- NAVIGATION BAR -->
     <header class="navbar">
-        <body class="subjects-page">
-            
-        </body>
-    <a href="Assets/Subjects Offered.html" class="logo">
-        Bright <span>Future</span>
-    </a>
+        <a href="../index.html" class="logo">
+            Bright <span>Future</span>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+        <nav class="nav-links">
+            <a href="../index.html">Home-page</a>
+            <a href="about us.html">About-us</a>
+            <a href="Contact us.html">Contact-us</a>
+            <a href="Textbooks.html">Textbooks</a>
+            <a href="#" class="active">Subjects-Offered</a>
+        </nav>
+    </header>
 
-    <nav class="nav-links">
+    <!-- BANNER -->
+    <section class="home-banner"></section>
 
-      <a href="../index.html">|home-page|</a>
-                <a href="about us.html">|About-us|</a>
-                <a href="Contact us.html">|Contact-us|</a>
-                <a href="Textbooks.html">|Textbooks|</a>
-                <a href="#">|Subjects-Offered|</a> 
+    <!-- MAIN TITLE -->
+    <div class="main-title">
+        <h1>Subjects Offered</h1>
+        <p>Helping students learn, grow and achieve their goals.</p>
+    </div>
 
-    </nav>
-
-</header>
-
-<body>
-<div class="main-title">
-
-    <h1>Bright Future Tutoring Centre</h1>
-
-    <p>
-        Helping students learn, grow and achieve their goals.
-    </p>
-
-    <a href="Assets/Subjects Offered.html" class="main-button">
-        Explore Our Subjects
-    </a>
-
-</div>
-        <body>
-
-            <div>
-                 <a href="../index.html">|home-page|</a>
-                <a href="about us.html">|About-us|</a>
-                <a href="Contact us.html">|Contact-us|</a>
-                <a href="Textbooks.html">|Textbooks|</a>
-                <a href="#">|Subjects-Offered|</a>
-
-            </div>
-
-                                 <ul>
-        <li><a href="#">Home Page</a></li>
-
-        <li><a href="Assets/about us.html">About Us</a></li>
-
-        <li><a href="Assets/Contact us.html">Contact Us</a></li>
-
-        <li><a href="Assets/Textbooks.html">Textbooks</a></li>
-
-        <a href="Assets/Subjects Offered.html">Subjects Offered</a>
-
+    <!-- SUBJECTS CONTENT -->
+    <div class="subjects-container">
         
-    </ul
-                    <P><h1>The subjects are offered by Bright Future Tutoring Centre are:</h1></P>
-                    <p>Matehmatic</p>
-                    <p>Enlish</p>
-                    <p>Life Science </p>
-                    <p>Physical Science </p>
-            
-                    <p>The following Prices per Subject depend on an hourly rate which are</p>
+        <h2 class="section-title">The subjects offered by Bright Future Tutoring Centre:</h2>
+        
+        <div class="subject-grid">
+            <div class="subject-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Mathematics</h3>
+                <a href="Contact us.html?subject=Mathematics" class="book-btn">Book Maths</a>
+            </div>
+            <div class="subject-card">
+                <i class="fas fa-book-open"></i>
+                <h3>English</h3>
+                <a href="Contact us.html?subject=English" class="book-btn">Book English</a>
+            </div>
+            <div class="subject-card">
+                <i class="fas fa-dna"></i>
+                <h3>Life Science</h3>
+                <a href="Contact us.html?subject=Life Science" class="book-btn">Book Life Science</a>
+            </div>
+            <div class="subject-card">
+                <i class="fas fa-flask"></i>
+                <h3>Physical Science</h3>
+                <a href="Contact us.html?subject=Physical Science" class="book-btn">Book Physical Science</a>
+            </div>
+        </div>
 
-                <table border="2">
+        <h2 class="section-title">Pricing per Subject</h2>
+        <p>Prices depend on an hourly rate:</p>
+        
+        <div class="table-container">
+            <table class="price-table">
+                <thead>
                     <tr>
-                            <th>price Per Subject</th>
-                            <th>English</th>
-                            <th>Physcial Science</th>
-                            <th>Mathematics</th>
-                            <th>Life Science</th>
+                        <th>Price Per Subject</th>
+                        <th>English</th>
+                        <th>Physical Science</th>
+                        <th>Mathematics</th>
+                        <th>Life Science</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
-                            <td>In Rands </td>
-                            <td>1hour=R400</td>
-                            <td>1hour=R780</td>
-                            <td>1hour=R950</td>
-                            <td>1hour=R600</td>
+                        <td><b>In Rands</b></td>
+                        <td>1 hour = R400</td>
+                        <td>1 hour = R780</td>
+                        <td>1 hour = R950</td>
+                        <td>1 hour = R600</td>
                     </tr>
-                </table>
+                </tbody>
+            </table>
+        </div>
 
-                            <p><u><h1>Our Online sessions</h1></u></p>
-                            <p>These Online session include the following:</p>
-                            <p><li>One on One session only limited to 1 Hour per session</li></p>
-                            <p><li>Use of Electronic textbook</li></p>
-                            <p><li>Online Tests</li></p>
-                            <p><li>Matser classes for catch up</li></p>
-                            <p><li>Online quizzes</li></p>
-                            <p><li>Online exam prep</li></p>
+        <!-- ONLINE SESSIONS -->
+        <h2 class="section-title">Our Online Sessions</h2>
+        <div class="online-session-banner">
+            <img src="../Images/online session.png" alt="Online Tutoring Sessions">
+        </div>
+        <p>These Online sessions include the following:</p>
+        <ul class="features-list">
+            <li>One-on-One session limited to 1 Hour per session</li>
+            <li>Use of Electronic textbook</li>
+            <li>Online Tests</li>
+            <li>Master classes for catch up</li>
+            <li>Online quizzes</li>
+            <li>Online exam prep</li>
+        </ul>
 
-                            <p><h1><u>Our In Person Session</u></h1></p>
-                            <p>These include the follwing</p>
-                            <p><li>One on One session</li></p>
-                            <p><li>In person tests</li></p>
-                            <p><li>In person exams</li></p>
-                            <p><li>In Person Correction</li></p>
-                            <p><li>Use of Mulitple textbooks</li></p>
-                            <p><li>Use of Electronic systems</li></p>
-                            <p><li>Extra sessions in person free of charge</li></p>
-                            <p><li>More than 1 Hour per session</li></p>
-                         <hr style="border: 2px solid black;">
-                            <Footer>
-                        <p>&copy; 2026 Luciens website. All rights reserved.</p>
-                    </Footer>
-        </body>
+        <!-- IN-PERSON SESSIONS -->
+        <h2 class="section-title">Our In-Person Sessions</h2>
+        <div class="inperson-session-banner">
+            <img src="../Images/inperson session.png" alt="In-person Tutoring Sessions">
+        </div>
+        <p>These include the following:</p>
+        <ul class="features-list">
+            <li>One-on-One session</li>
+            <li>In-person tests</li>
+            <li>In-person exams</li>
+            <li>In-person Correction</li>
+            <li>Use of Multiple textbooks</li>
+            <li>Use of Electronic systems</li>
+            <li>Extra sessions in person free of charge</li>
+            <li>More than 1 Hour per session</li>
+        </ul>
+
+    </div>
+
+    <hr style="border: 2px solid black;">
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Lucien's website. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>

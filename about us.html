@@ -1,138 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About-us</title>
-        <link rel="stylesheet" href="../CSS/style.css"> 
-    </head>
-    <body class="aboutpage">
+<head>
+    <title>About-us</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/JavaScript.js" defer></script>
+</head>
+
+<body class="aboutpage">
+
+    <!-- NAVIGATION BAR -->
     <header class="navbar">
 
-    <a href="Assets/about us.html" class="logo">
-        Bright <span>Future</span>
-    </a>
+        <a href="../index.html" class="logo">
+            Bright <span>Future</span>
+        </a>
 
-    <nav class="nav-links">
+        <nav class="nav-links">
+            <a href="../index.html">Home-page</a>
+            <a href="about us.html" class="active">About-us</a>
+            <a href="Contact us.html">Contact-us</a>
+            <a href="Textbooks.html">Textbooks</a>
+            <a href="Subjects Offered.html">Subjects-Offered</a>
+        </nav>
 
-       
-                                    <a href="../index.html">|Home-page|</a>
-                    <a href="#" class="active">|About-us|</a> 
-                    <a href="contact us.html">|Contact-us|</a>
-                    <a href="Textbooks.html">|Textbooks|</a>
-                    <a href="Subjects Offered.html">|Subjects-Offered</a>
+    </header>
 
-    </nav>
+    <!-- WEBSITE BANNER -->
+    <section class="home-banner"></section>
 
-</header>
+    <!-- MAIN TITLE SECTION -->
+    <div class="main-title">
 
-<section class="home-banner">
-</section>
+        <h1>Bright Future Tutoring Centre</h1>
 
-<body>
-<div class="main-title">
+        <p>
+            Helping students learn, grow and achieve their goals.
+        </p>
 
+        <a href="Subjects Offered.html" class="main-button">
+            Explore Our Subjects
+        </a>
 
-    <h1>Bright Future Tutoring Centre</h1>
+    </div>
 
-    <p>
-        Helping students learn, grow and achieve their goals.
-    </p>
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="scroll-progress"></div>
 
-    <a href="Assets/Subjects Offered.html" class="main-button">
-        Explore Our Subjects
-    </a>
+    <!-- ABOUT US CONTENT -->
+    <main>
+<nav class="about-side">
+    <a href="#intro">About Us</a>
+    <a href="#drives">What Drives Us</a>
+    <a href="#team">Our Team</a>
+</nav>
+        <h2>This is what Bright Future Tutoring Centre can say about us.</h2>
 
-</div>
-    <body>
-        <div>
-                    <a href="../index.html">|home-page|</a>
-                    <a href="#">|About-us|</a> 
-                    <a href="contact us.html">|Contact-us|</a>
-                    <a href="Textbooks.html">|Textbooks|</a>
-                    <a href="Subjects Offered.html">|Subjects-Offered</a>
+        <p>
+            This is a small educational business that provides the extra
+            lessons and academic support students need in Mathematics,
+            Physical Science, English and Life Science. This centre offers
+            both in-person and online sessions, helping students improve
+            their academic performance and prepare for exams.
+        </p>
+
+        <!-- Extra paragraph, revealed by the Read More button.
+             The paragraph is now INSIDE #aboutExtra so the toggle works. -->
+        <div class="about-extra" id="aboutExtra">
+            <p>
+                We aim to create a supportive learning environment where learners
+                can ask questions, develop their skills and build confidence.
+                Our online and in-person sessions help learners prepare for
+                assessments and work towards their academic goals.
+            </p>
         </div>
-            <P><h1>This is what Bright future tutoring centre can say about us.</h1></P>
-                         <ul>
-        <li><a href="#">Home Page</a></li>
 
-        <a href="Assets/about us.html">About Us</a>
+        <button type="button" id="readMoreBtn" class="main-button">
+            Read More About Us
+        </button>
 
-        <li><a href="Assets/Contact us.html">Contact Us</a></li>
+        <!-- VISION / MISSION / HISTORY (pillar cards) -->
+        <section class="pillars-section">
+            <h2>What Drives Us</h2>
 
-        <li><a href="Assets/Textbooks.html">Textbooks / Gallery</a></li>
+            <div class="pillars">
+                <article class="pillar" data-tilt>
+                    <div class="pillar-icon"></div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        Our vision is to achieve a successful pass rate at the end of
+                        the school year and encourage more high school learners,
+                        especially those who are struggling academically, to
+                        participate in our programmes.
+                    </p>
+                </article>
 
-        <li><a href="Assets/Subjects Offered.html">Subjects Offered</a></li>
+                <article class="pillar" data-tilt>
+                    <div class="pillar-icon"></div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        Our mission is to attract new learners and parents every year
+                        and encourage students to improve their academic marks. We
+                        want to reach learners nationwide in the next few years.
+                    </p>
+                </article>
 
-        
-    </ul>
-            <p>This a small educational business that provides extra lessons and academic support a student will need for Mathematics, Physical science, Enlish and life science.
-            This centre offers both in person and online sessions, helping students improve thier academic performance and prepare for exams as well.</p>
+                <article class="pillar" data-tilt>
+                    <div class="pillar-icon"></div>
+                    <h3>Our History</h3>
+                    <p>
+                        Bright Future Tutoring Centre has been operating since 2015
+                        and continues to grow, with a reported pass rate of 98.99%
+                        over the years. We aim to expand internationally.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-            <P><h1><u>Our Vision</u></h1></P>
-            <p>The vision is to have a successful pass rate at the end of the school year, and having more and more high school leaners participate in our programs,
-                that are struggling academically.
+        <!-- Animated pass rate counter -->
+        <p>Pass rate: <span class="counter" data-target="99">0</span>%</p>
 
-            <p><h2><u>Our Mission</u></h2></p> <!--Who we are-->
-            <p>The Mission to attract new learners and parent every year and encourge the students to improve their academic makrs, we as a company want to reach all learners nation wide,
-                    and on a national level in the next few years, we believe that our methods of tutoring can really change the game.
+        <!-- OUR TEAM -->
+        <h2><u>Our Team</u></h2>
 
-            <p><h2><u>Our History</u></h2></p> <!--What we've achieved-->
-            <p>We have as a company been opened since 2015 and still growing, we have had a 98.99% pass rate over the years since opening, as a company we have,
-                        received rewards, one being the winner of the most successful tutoring business to exsit.Over the next year we will be the fisrt tutoring business to expand into national lands, 
-                        touching down in USA, London and the France.
+        <p>
+            The Bright Future Tutoring Centre team consists of the
+            following members:
+        </p>
 
-                        
-                       
+        <table class="team-table">
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+            </tr>
+            <tr>
+                <td>Lucien</td>
+                <td>Owner</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Head Tutor - Mathematics and Physical Science</td>
+            </tr>
+            <tr>
+                <td>Kelly</td>
+                <td>Head Tutor - Life Science</td>
+            </tr>
+            <tr>
+                <td>Casey</td>
+                <td>Head Tutor - English</td>
+            </tr>
+            <tr>
+                <td>Zoe</td>
+                <td>Tutor Assistant</td>
+            </tr>
+            <tr>
+                <td>Saskia</td>
+                <td>Tutor Assistant</td>
+            </tr>
+            <tr>
+                <td>Caitlyn</td>
+                <td>Tutor Assistant</td>
+            </tr>
+        </table>
 
-            <p><h2><u>Our Team</u></h2></p>
-            <p>The Brigth Future Tutoring Centre consists of</p> 
+        <p>
+            This is the team that has helped make Bright Future Tutoring
+            Centre an accomplished and recognisable business.
+        </p>
 
-            <table class="team-table">
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                 </tr>
+    </main>
 
-                 <tr>
-                    <td>Lucien</td>
-                    <td>Owner</td>
-                 </tr>
+    <!-- DIVIDER -->
+    <hr style="border: 2px solid black;">
 
-                 <tr>
-                    <td>Mike</td>
-                    <td>Head Tutor- Mathematics and Phyiscal Science</td>
-                 </tr>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Lucien's website. All rights reserved.</p>
+    </footer>
 
-                 <tr>
-                    <td>Kelly</td>
-                    <td>Head Tutor- Life Science</td>
-                 </tr>
-                 
-                 <td>Casey</td>
-                 <td>Head Tutor- English</td>
-
-                 <tr>
-                    <td>Zoe</td>
-                    <td>Tutor assistant</td>
-                 </tr>
-
-                 <tr>
-                    <td>Saskia</td>
-                    <td>Tutor assistant</td>
-                 </tr>
-
-                 <tr>
-                    <td>Caitlyn</td>
-                    <td>Tutor assistant</td>
-                 </tr>
-                 </table>
-                    <p>This is the team that has made us the most accomplished and recognisable business</p>    .
-            </p>
-            </p>
-            </p>
-            </p>
-            <hr style="border: 2px solid black;">
-            <Footer>
-                        <p>&copy; 2026 Luciens website. All rights reserved.</p>
-                    </Footer>
-    </body>
+</body>
 </html>

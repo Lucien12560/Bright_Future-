@@ -1,285 +1,110 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-    <title>Textbooks Bright Future is selling</title>
-
+    <title>Textbooks | Bright Future</title>
     <link rel="stylesheet" href="../CSS/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- We will put the new JS at the bottom of the body so the HTML loads first -->
 </head>
 
 <body class="textbookpage">
 
     <!-- NAVIGATION BAR -->
-
     <header class="navbar">
-
         <a href="../index.html" class="logo">
             Bright <span>Future</span>
         </a>
-
         <input type="checkbox" id="menu-toggle">
-
         <label for="menu-toggle" class="menu-toggle">&#9776;</label>
-
         <nav class="nav-links">
-
-            <a href="../index.html">|Home-page|</a>
-
-            <a href="about us.html">|About-us|</a>
-
-            <a href="Contact us.html">|Contact-us|</a>
-
-            <a href="#" class="active">|Textbooks|</a>
-
-            <a href="Subjects Offered.html">|Subjects-Offered|</a>
-
-
+            <a href="../index.html">Home-page</a>
+            <a href="about us.html">About-us</a>
+            <a href="Contact us.html">Contact-us</a>
+            <a href="#" class="active">Textbooks</a>
+            <a href="Subjects Offered.html">Subjects-Offered</a>
         </nav>
-
     </header>
 
-
     <!-- BANNER IMAGE -->
+    <section class="home-banner"></section>
 
-    <section class="home-banner">
+    <!-- MAIN CONTENT -->
+    <div class="main-title">
+        <h1>Textbooks Bright Future is selling</h1>
+        <a href="Subjects Offered.html" class="main-button">Explore Our Subjects</a>
+    </div>
+
+    <!-- TEXTBOOK LIST -->
+    <ul class="textbook-list">
+        <li class="textbook">
+            <img src="../Images/Mathematics .png" alt="Mathematics textbook">
+            <p><b>Mathematics</b></p>
+            <p>Price: R1050</p>
+            <button onclick="addToCart('Mathematics', 1050, '../Images/Mathematics .png')">Add to Cart</button>
+        </li>
+
+        <li class="textbook">
+            <img src="../Images/Life science .png" alt="Life Science textbook">
+            <p><b>Life Science</b></p>
+            <p>Price: R563</p>
+            <button onclick="addToCart('Life Science', 563, '../Images/Life science .png')">Add to Cart</button>
+        </li>
+
+        <li class="textbook">
+            <img src="../Images/Physical science .png" alt="Physical Science textbook">
+            <p><b>Physical Science</b></p>
+            <p>Price: R1499</p>
+            <button onclick="addToCart('Physical Science', 1499, '../Images/Physical science .png')">Add to Cart</button>
+        </li>
+
+        <li class="textbook">
+            <img src="../Images/English.png" alt="English textbook">
+            <p><b>English</b></p>
+            <p>Price: R400</p>
+            <button onclick="addToCart('English', 400, '../Images/English.png')">Add to Cart</button>
+        </li>
+    </ul>
+
+    <!-- SHOPPING CART -->
+    <section class="shopping-cart">
+        <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+        <div id="cart-items">
+            <p class="empty-cart">Your cart is currently empty.</p>
+        </div>
+        <h3>Total: R<span id="cart-total">0</span></h3>
+        <button onclick="checkout()" class="checkout-btn">Proceed to Checkout</button>
     </section>
 
-
-    <!-- TEXTBOOK PAGE CONTENT -->
-
-    <div class="main-title">
-
-        <h1>Textbooks Bright Future is selling</h1>
-
-         <a href="Assets/Subjects Offered.html" class="main-button">
-        Explore Our Subjects
-    </a>
-
+    <!-- INFO SECTION -->
+      
+    <div class="textbook-info-section">
+        <h2 class="info-title">Reasons for textbooks being sold</h2>
+        
+        <p class="info-text">
+            These textbooks that we sell are of very good quality and can be used
+            all the way through to Universities. This ensures that you as a parent
+            don't waste money and provides you with consistent educational
+            improvements throughout your child's schooling career.
+        </p>
+        
+        <p class="info-text">
+            However, we do sell 2nd hand textbooks, but as a company we cannot
+            guarantee their condition. That's why we don't have them on our
+            website. Those 2nd hand textbooks are only bought in store for
+            quality assurance purposes.
+        </p>
     </div>
-
-<!--This is java used to add a functional shopping cart-->
-<ul class="textbook-list">
-
-    <li class="textbook">
-
-        <img src="../Images/Mathematics .png"
-             alt="Mathematics textbook">
-
-        <p><b>Mathematics</b></p>
-
-        <p>Price: R1050</p>
-
-        <button onclick="addToCart('Mathematics', 1050)">
-            Add to Cart
-        </button>
-
-    </li>
-
-
-    <li class="textbook">
-
-        <img src="../Images/Life science .png"
-             alt="Life Science textbook">
-
-        <p><b>Life Science</b></p>
-
-        <p>Price: R563</p>
-
-        <button onclick="addToCart('Life Science', 563)">
-            Add to Cart
-        </button>
-
-    </li>
-
-
-    <li class="textbook">
-
-        <img src="../Images/Physical science .png"
-             alt="Physical Science textbook">
-
-        <p><b>Physical Science</b></p>
-
-        <p>Price: R1499</p>
-
-        <button onclick="addToCart('Physical Science', 1499)">
-            Add to Cart
-        </button>
-
-    </li>
-
-
-    <li class="textbook">
-
-        <img src="../Images/English.png"
-             alt="English textbook">
-
-        <p><b>English</b></p>
-
-        <p>Price: R400</p>
-
-        <button onclick="addToCart('English', 400)">
-            Add to Cart
-        </button>
-
-    </li>
-
-</ul>
-
-<!--This is the shopping cart-->
-<section class="shopping-cart">
-
-    <h2>Shopping Cart</h2>
-
-    <div id="cart-items">
-        <p>Your cart is currently empty.</p>
-    </div>
-
-    <h3>Total: R<span id="cart-total">0</span></h3>
-
-    <button onclick="checkout()">Checkout</button>
-
-</section>
-
-
-
-
-    <h2>Reasons for textbooks being sold</h2>
-
-    <p>
-
-        These textbooks that we sell are of very good quality and can be used
-        all the way through to Universities. This ensures that you as a parent
-        don't waste money and provides you with consistent educational
-        improvements throughout your child's schooling career.
-
-        However, we do sell 2nd hand textbooks, but as a company we cannot
-        guarantee their condition. That's why we don't have them on our
-        website. Those 2nd hand textbooks are only bought in store for
-        quality assurance purposes.
-
-    </p>
-
-
-    <!-- FOOTER -->
 
     <hr style="border: 2px solid black;">
 
     <footer>
-
-        <p>
-            &copy; 2026 Luciens website. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Lucien's website. All rights reserved.</p>
     </footer>
-    <!--This is a fully functional shopping cart created with Java Script-->
-<script>
 
-let cart = [];
-
-
-function addToCart(name, price) {
-
-    let existingItem = cart.find(item => item.name === name);
-
-    if (existingItem) {
-
-        existingItem.quantity++;
-
-    } else {
-
-        cart.push({
-            name: name,
-            price: price,
-            quantity: 1
-        });
-
-    }
-
-    displayCart();
-}
-
-
-function displayCart() {
-
-    let cartItems = document.getElementById("cart-items");
-    let cartTotal = document.getElementById("cart-total");
-
-    cartItems.innerHTML = "";
-
-    let total = 0;
-
-
-    if (cart.length === 0) {
-
-        cartItems.innerHTML = "<p>Your cart is currently empty.</p>";
-
-    }
-
-
-    cart.forEach(function(item, index) {
-
-        let itemTotal = item.price * item.quantity;
-
-        total += itemTotal;
-
-
-        cartItems.innerHTML += `
-        
-            <div class="cart-item">
-
-                <p>
-                    <b>${item.name}</b>
-                </p>
-
-                <p>
-                    R${item.price} × ${item.quantity}
-                </p>
-
-                <p>
-                    Item total: R${itemTotal}
-                </p>
-
-                <button onclick="removeFromCart(${index})">
-                    Remove
-                </button>
-
-            </div>
-        
-        `;
-
-    });
-
-
-    cartTotal.textContent = total;
-}
-
-
-function removeFromCart(index) {
-
-    cart.splice(index, 1);
-
-    displayCart();
-}
-
-
-function checkout() {
-
-    if (cart.length === 0) {
-
-        alert("Your cart is empty.");
-
-    } else {
-
-        alert("Thank you for your order!");
-
-    }
-
-}
-
-</script>
-
+    <!-- YOUR JAVASCRIPT GOES HERE -->
+    <script src="../JS/JavaScript.js" defer></script>
 </body>
-
 </html>
