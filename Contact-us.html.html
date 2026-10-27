@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bright Future</title>
+    <link rel="stylesheet" href="../CSS/style.css"> 
+    <script src="../JS/contact-us.js" defer></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="contactpage">
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            Bright <span>Future</span>
+        </a>
+        <nav class="nav-links">
+            <a href="../index.html">Home-page</a>
+            <a href="about-us.html">About-us</a>
+            <a href="#" class="active">Contact-us</a>
+            <a href="textbooks.html">Textbooks</a>
+            <a href="subjects-offered.html">Subjects-Offered</a>
+        </nav>
+    </header>
+
+    <section class="home-banner"></section>
+
+    <div class="main-title">
+        <h1>Bright Future Tutoring Centre</h1>
+        <p>Helping students learn, grow and achieve their goals.</p>
+        <a href="subjects-offered.html" class="main-button">Explore Our Subjects</a>
+    </div>
+
+    <div class="contact-container">
+        <!-- Header -->
+        <div class="contact-header">
+            <h2><i class="fas fa-envelope" style="color: #0f6bff;"></i> Contact Us</h2>
+            <p>Please have a look at the box below for the following contact information</p>
+        </div>
+
+        <!-- Contact Info - Modern Grid -->
+        <div class="contact-info-grid">
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span class="label">Cell No</span>
+                <div class="value">072 621 7294</div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span class="label">Email Address</span>
+                <div class="value">Futuretutoring@gmail.com</div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-building"></i>
+                <span class="label">Office No</span>
+                <div class="value">072 621 7294</div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="label">Location</span>
+                <div class="value">26 Bryanston Ave &amp; 14 Fairland St</div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span class="label">Trading Hours</span>
+                <div class="value">10AM - 5PM</div>
+            </div>
+        </div>
+
+        <!-- Enquiry Form -->
+        <div class="enquiry-section">
+            <h3>
+                <i class="fas fa-pen-fancy"></i> Make an Enquiry
+            </h3>
+            <p style="color: #4c5a77; margin-bottom: 1.5rem;">
+                If you wish to make an enquiry or book a meeting, please fill in the form below.
+            </p>
+
+            <form id="contactForm" action="https://formspree.io/f/mjyyyzan" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location Details</label>
+                    <input type="text" id="location" name="location" placeholder="e.g. Sandton" />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject of Interest</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject...</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Physical Science">Physical Science</option>
+                        <option value="English">English</option>
+                        <option value="Life Science">Life Science</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="Tell us what you need help with..." required></textarea>
+                </div>
+
+                <!-- Hidden field for custom email subject header -->
+                <input type="hidden" name="_subject" value="New Enquiry from Bright Future Website" />
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Enquiry
+                </button>
+            </form>
+        </div>
+    </div>  
+
+    <!-- Map Section -->
+    <div class="map-section">
+        <h2>Our Locations</h2>
+        
+        <div class="map-grid">
+            <!-- Location 1 -->
+            <div class="map-card">
+                <h3>1st Location</h3>
+                <div class="map-wrapper">
+                    <iframe title="Bryanston Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.450110105256!2d28.03445327415566!3d-26.051542357771662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95738fc24af2e7%3A0xf4b34c3469b96241!2sBryanston%20Dr%2C%20Bryanston%2C%20Sandton%2C%202191!5e0!3m2!1sen!2sza!4v1786278318060!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <button class="map-expand-btn" aria-label="Expand Map"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+
+            <!-- Location 2 -->
+            <div class="map-card">
+                <h3>2nd Location</h3>
+                <div class="map-wrapper">
+                    <iframe title="Fairlands Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.412136576251!2d27.94151447416055!3d-26.150703961794925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950b1e5ec1b9f9%3A0x84c374c6c76911d6!2sFairlands%20on%2014th!5e0!3m2!1sen!2sza!4v1786279187355!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <button class="map-expand-btn" aria-label="Expand Map"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #ccc; margin: 2rem 0;">
+    <footer>
+        <p>&copy; 2026 Lucien's website. All rights reserved.</p>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-toggle" id="chatToggle"><i class="fas fa-comment-dots"></i></button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h4>Quick Question?</h4>
+                <button id="chatClose">&times;</button>
+            </div>
+            <div class="chat-body">
+                <p>Hi there! Need help with a subject or pricing? Send us a quick message.</p>
+                <input type="text" placeholder="Type your message here..." id="chatInput">
+                <button class="chat-send" onclick="alert('Message sent! We will reply shortly.')">Send</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
