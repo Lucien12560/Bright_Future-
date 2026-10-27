@@ -398,7 +398,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* 12. PILLAR CARDS: REVEAL + 3D TILT (ABOUT PAGE) - FIXED SYNTAX ERROR */
+    /* 12. PILLAR CARDS: REVEAL + 3D TILT (ABOUT PAGE) */
     const pillars = document.querySelectorAll(".aboutpage .pillar");
 
     if (pillars.length) {
@@ -928,4 +928,65 @@ document.addEventListener("DOMContentLoaded", function () {
         bigImg.alt = images[current].alt;
         caption.textContent = images[current].alt;
 
-        thumbs.forEach(function (t,
+        thumbs.forEach(function (t, n) {
+            t.classList.toggle("active", n === current);
+        });
+    }
+
+    function open(i) {
+        show(i);
+        box.classList.add("open");
+    }
+
+    function close() {
+        box.classList.remove("open");
+    }
+
+    images.forEach(function (img, i) {
+        img.addEventListener("click", function () {
+            open(i);
+        });
+    });
+
+    const closeButton = document.getElementById("lbClose");
+    const previousButton = document.getElementById("lbPrev");
+    const nextButton = document.getElementById("lbNext");
+
+    if (closeButton) {
+        closeButton.addEventListener("click", close);
+    }
+
+    if (previousButton) {
+        previousButton.addEventListener("click", function () {
+            show(current - 1);
+        });
+    }
+
+    if (nextButton) {
+        nextButton.addEventListener("click", function () {
+            show(current + 1);
+        });
+    }
+
+    box.addEventListener("click", function (e) {
+        if (e.target === box) {
+            close();
+        }
+    });
+
+    document.addEventListener("keydown", function (e) {
+        if (!box.classList.contains("open")) return;
+
+        if (e.key === "Escape") {
+            close();
+        }
+
+        if (e.key === "ArrowLeft") {
+            show(current - 1);
+        }
+
+        if (e.key === "ArrowRight") {
+            show(current + 1);
+        }
+    });
+});
