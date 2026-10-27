@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Textbooks | Bright Future</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- We will put the new JS at the bottom of the body so the HTML loads first -->
 </head>
 
 <body class="textbookpage">
 
     <!-- NAVIGATION BAR -->
     <header class="navbar">
-        <a href="../index.html" class="logo">
+        <a href="index.html" class="logo">
             Bright <span>Future</span>
         </a>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-toggle">&#9776;</label>
         <nav class="nav-links">
-            <a href="../index.html">Home-page</a>
-            <a href="about us.html">About-us</a>
-            <a href="Contact us.html">Contact-us</a>
-            <a href="#" class="active">Textbooks</a>
-            <a href="Subjects Offered.html">Subjects-Offered</a>
+            <a href="index.html">Home-page</a>
+            <a href="about-us.html">About-us</a>
+            <a href="contact-us.html">Contact-us</a>
+            <a href="textbooks.html" class="active">Textbooks</a>
+            <a href="subjects-offered.html">Subjects-Offered</a>
         </nav>
     </header>
 
@@ -34,37 +32,37 @@
     <!-- MAIN CONTENT -->
     <div class="main-title">
         <h1>Textbooks Bright Future is selling</h1>
-        <a href="Subjects Offered.html" class="main-button">Explore Our Subjects</a>
+        <a href="subjects-offered.html" class="main-button">Explore Our Subjects</a>
     </div>
 
     <!-- TEXTBOOK LIST -->
     <ul class="textbook-list">
         <li class="textbook">
-            <img src="../Images/Mathematics .png" alt="Mathematics textbook">
+            <img src="Images/Mathematics .png" alt="Mathematics textbook">
             <p><b>Mathematics</b></p>
             <p>Price: R1050</p>
-            <button onclick="addToCart('Mathematics', 1050, '../Images/Mathematics .png')">Add to Cart</button>
+            <button onclick="addToCart('Mathematics', 1050, 'Images/Mathematics .png')">Add to Cart</button>
         </li>
 
         <li class="textbook">
-            <img src="../Images/Life science .png" alt="Life Science textbook">
+            <img src="Images/Life science .png" alt="Life Science textbook">
             <p><b>Life Science</b></p>
             <p>Price: R563</p>
-            <button onclick="addToCart('Life Science', 563, '../Images/Life science .png')">Add to Cart</button>
+            <button onclick="addToCart('Life Science', 563, 'Images/Life science .png')">Add to Cart</button>
         </li>
 
         <li class="textbook">
-            <img src="../Images/Physical science .png" alt="Physical Science textbook">
+            <img src="Images/Physical science .png" alt="Physical Science textbook">
             <p><b>Physical Science</b></p>
             <p>Price: R1499</p>
-            <button onclick="addToCart('Physical Science', 1499, '../Images/Physical science .png')">Add to Cart</button>
+            <button onclick="addToCart('Physical Science', 1499, 'Images/Physical science .png')">Add to Cart</button>
         </li>
 
         <li class="textbook">
-            <img src="../Images/English.png" alt="English textbook">
+            <img src="Images/English.png" alt="English textbook">
             <p><b>English</b></p>
             <p>Price: R400</p>
-            <button onclick="addToCart('English', 400, '../Images/English.png')">Add to Cart</button>
+            <button onclick="addToCart('English', 400, 'Images/English.png')">Add to Cart</button>
         </li>
     </ul>
 
@@ -79,7 +77,6 @@
     </section>
 
     <!-- INFO SECTION -->
-      
     <div class="textbook-info-section">
         <h2 class="info-title">Reasons for textbooks being sold</h2>
         
@@ -104,7 +101,7 @@
         <p>&copy; 2026 Lucien's website. All rights reserved.</p>
     </footer>
 
-    <!-- YOUR JAVASCRIPT GOES HERE -->
-    <script src="../JS/JavaScript.js" defer></script>
+    <!-- MAIN JAVASCRIPT -->
+    <script src="JS/contact-us.js"></script>
 </body>
 </html>
