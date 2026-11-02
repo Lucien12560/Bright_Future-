@@ -1,0 +1,10 @@
+# Allow all search engine crawlers to access public pages
+User-agent: *
+Allow: / 
+
+# Disallow crawling of internal scripts and styling assets if needed
+Disallow: /CSS/
+Disallow: /JavaScript.js
+
+# Reference the sitemap
+Sitemap: https://lucien12560.github.io/Bright_Future-/ 
