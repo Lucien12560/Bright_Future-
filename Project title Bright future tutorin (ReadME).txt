@@ -477,6 +477,9 @@ Add grid-based layout system for better responsiveness.
 <h1>Updated list</h> 
 Updated the folder structure and added the Css stylesheet into the CSS folder, then used the CSS to style the html pages to add color and change the layout and designs of the webpages. Used CSS to center align all the content on each page and formatted the tables as well, used CSS to add a comprehensive navigation bar which changes color depending on the page you selected.
 
+<h1><b>Github Link</b></h1>
+
+
 
 <h1>References</h1>:
  HostAfrica. 2025. We hosting services. https://www.hostafrica.co.za/
