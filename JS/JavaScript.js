@@ -990,3 +990,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutForm = document.getElementById("aboutContactForm");
+    const successMsg = document.getElementById("form-success-msg");
+
+    if (aboutForm) {
+        aboutForm.addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevents actual page reload for testing
+            aboutForm.style.display = "none";
+            successMsg.style.display = "block";
+        });
+    }
+});
+
